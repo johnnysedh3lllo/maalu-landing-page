@@ -23,6 +23,9 @@
   --fw-primary-200: 500;
   --fw-primary-300: 600;
   --fw-secondary: 700;
+
+  /* TRANSITION */
+  --transition-duration: 0.4s;
 }
 
 /* Box sizing rules */

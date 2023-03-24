@@ -190,7 +190,7 @@ h1.heading {
   /* gap: 3.75rem; */
   justify-content: space-between;
   min-height: 30rem;
-  transition: background-color 0.3s, border-radius 0.3s;
+  transition: background-color var(--transition-duration), border-radius var(--transition-duration);
 }
 
 .join {
@@ -211,15 +211,15 @@ h1.heading {
   border: 1px solid var(--clr-neutral-200);
   border-radius: 16px;
   width: fit-content;
-  transition: padding 0.3s, border 0.3s;
+  transition: padding var(--transition-duration), border var(--transition-duration);
 }
 
 .arrow {
-  transition: rotate 0.3s;
+  transition: rotate var(--transition-duration);
 }
 
 .arrow path {
-  transition: fill 0.3s;
+  transition: fill var(--transition-duration);
 }
 
 /* Hover classes */

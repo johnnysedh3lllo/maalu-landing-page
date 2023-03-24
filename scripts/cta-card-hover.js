@@ -18,13 +18,13 @@ const arrowTwo = document.querySelector(".arrow-two");
 const arrowTwoPath = document.querySelector(".path-two");
 
 // *FUNCTIONS
-const applyCardHover = (card, heading, par, arrowWrapper, arrow) => {
+const applyCardHover = (card, heading, par, arrowWrapper) => {
   card.classList.add("card--hover");
   heading.classList.add("txt-white-100");
   par.classList.add("txt-white-300");
   arrowWrapper.classList.add("arrow--grow");
 };
-const removeCardHover = (card, heading, par, arrowWrapper, arrow) => {
+const removeCardHover = (card, heading, par, arrowWrapper) => {
   card.classList.remove("card--hover");
   heading.classList.remove("txt-white-100");
   par.classList.remove("txt-white-300");
@@ -62,5 +62,3 @@ cardTwo.addEventListener("mouseout", () => {
   arrowTwo.classList.remove("arrow--rotate");
   arrowTwoPath.classList.remove("arrow--clr");
 });
-
-console.log(arrowOnePath.classList);
