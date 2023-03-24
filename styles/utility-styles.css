@@ -1,0 +1,155 @@
+* {
+  /* outline: 1px solid red; */
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  color: var(--clr-primary-100);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* HEADINGS */
+
+.heading {
+  font-family: var(--ff-secondary);
+}
+
+.fw-main {
+  font-weight: var(--fw-primary-100);
+}
+
+.head-fw-100 {
+  font-weight: var(--fw-secondary);
+}
+
+.head-fs-100 {
+  font-size: var(--fs-heading-100);
+}
+
+.head-fs-200 {
+  font-size: var(--fs-heading-200);
+}
+
+.head-fs-300 {
+  font-size: var(--fs-heading-300);
+}
+
+/* PARAGRAPHS */
+
+.par {
+  font-family: var(--ff-primary);
+}
+
+.par-fw-200 {
+  font-weight: var(--fw-primary-200);
+}
+
+.par-fw-300 {
+  font-weight: var(--fw-primary-300);
+}
+
+.par-fs-100 {
+  --fs-paragraph-100: 1.125rem;
+  font-size: var(--fs-paragraph-100);
+}
+
+.par-fs-200 {
+  --fs-paragraph-100: 1.25rem;
+  font-size: var(--fs-paragraph-100);
+}
+
+.par-fs-300 {
+  font-size: var(--fs-paragraph-100);
+}
+
+.par-fs-400 {
+  --fs-paragraph-100: 0.75rem;
+  font-size: var(--fs-paragraph-100);
+}
+
+.par-fs-500 {
+  --fs-paragraph-100: 0.875rem;
+  font-size: var(--fs-paragraph-100);
+}
+
+/* COLORS */
+.txt-black-100 {
+  color: var(--clr-neutral-200);
+}
+
+.txt-black-200 {
+  --clr-neutral-200: hsla(0, 0%, 0%, 0.8);
+  color: var(--clr-neutral-200);
+}
+
+.txt-black-300 {
+  --clr-neutral-200: hsla(0, 0%, 0%, 0.4);
+  color: var(--clr-neutral-200);
+}
+
+.txt-black-400 {
+  --clr-neutral-200: hsla(0, 0%, 0%, 0.2);
+  color: var(--clr-neutral-200);
+}
+
+.txt-white-100 {
+  color: var(--clr-neutral-100);
+}
+
+.txt-white-200 {
+  --clr-neutral-100: hsla(0, 0%, 100%, 0.4);
+  color: var(--clr-neutral-100);
+}
+
+.txt-white-300 {
+  --clr-neutral-100: hsla(0, 0%, 100%, 0.8);
+  color: var(--clr-neutral-100);
+}
+
+.txt-green-100 {
+  color: var(--clr-primary-100);
+}
+
+.bg-white-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-white-200 {
+  --clr-neutral-100: hsla(0, 0%, 100%, 0.1);
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-white-300 {
+  --clr-neutral-100: hsl(0, 0%, 98%);
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-green-100 {
+  background-color: var(--clr-primary-100);
+}
+
+.bg-black-100 {
+  background-color: var(--clr-neutral-200);
+}
+
+.bg-black-200 {
+  --clr-neutral-200: hsl(0, 0%, 0%, 0.05);
+  background-color: var(--clr-neutral-200);
+}
