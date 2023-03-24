@@ -63,6 +63,10 @@ input[type="email"]:focus {
   gap: 3rem;
 }
 
+.nav-bar__link:hover {
+  color: black;
+}
+
 /* HEADER */
 .header {
   flex-direction: column;
@@ -189,7 +193,7 @@ h1.heading {
   flex-direction: column;
   /* gap: 3.75rem; */
   justify-content: space-between;
-  min-height: 30rem;
+  min-height: 27rem;
   transition: background-color var(--transition-duration),
     border-radius var(--transition-duration);
 }
