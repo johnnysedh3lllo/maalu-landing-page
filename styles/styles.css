@@ -64,7 +64,7 @@ input[type="email"]:focus {
 }
 
 .nav-bar__link:hover {
-  color: black;
+  color: hsl(0, 0%, 0%);
 }
 
 /* HEADER */
