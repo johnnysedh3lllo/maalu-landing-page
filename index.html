@@ -43,13 +43,17 @@
         </p>
       </div>
       <div class="input-wrapper flex">
-        <div class="header-field input__field bg-black-200 par par-fs-100">
+        <form
+          method="post"
+          action="#"
+          id="waitlist-form"
+          class="header-field input__field bg-black-200 par par-fs-100"
+        >
           <input
             class="input"
             placeholder="Please enter your email address"
             type="email"
             required
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           />
           <button
             class="button header__button par-fw-300 bg-green-100 txt-white-100"
@@ -57,7 +61,7 @@
           >
             Notify Me
           </button>
-        </div>
+        </form>
 
         <p class="input-info par par-fs-300 fw-main txt-black-300">
           Notify me when the app is lunched
@@ -276,17 +280,63 @@
           </h2>
 
           <section class="faq-content flex">
-            <div class="question par-fs-100 par-fw-300 bg-black-200 flex">
-              <h4>What is Maalu?</h4>
-              <figure><img src="assets/arrow-down.svg" alt="" /></figure>
+            <div class="question-answer-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>What is Maalu?</h4>
+                <figure>
+                  <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+                </figure>
+              </div>
+
+              <div class="answer">
+                <p>
+                  Maalu is an online foodstuff marketplace that allows customers
+                  to collaborate and share the cost of buying in bulk. By
+                  pooling together their resources, Maalu customers can purchase
+                  high-quality ingredients at a lower cost than buying them
+                  individually.
+                </p>
+              </div>
             </div>
-            <div class="question par-fs-100 par-fw-300 bg-black-200 flex">
-              <h4>How does it work?</h4>
-              <figure><img src="assets/arrow-down.svg" alt="" /></figure>
+
+            <div class="question-answer-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>How does it work?</h4>
+                <figure>
+                  <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+                </figure>
+              </div>
+
+              <div class="answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptate reiciendis beatae esse ratione omnis eaque
+                  dolore nobis odio reprehenderit. Provident, delectus! Ad
+                  labore, cum iusto minima sit soluta quasi!
+                </p>
+              </div>
             </div>
-            <div class="question par-fs-100 par-fw-300 bg-black-200 flex">
-              <h4>How much does it cost?</h4>
-              <figure><img src="assets/arrow-down.svg" alt="" /></figure>
+
+            <div class="question-answer-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>How much does it cost?</h4>
+                <figure>
+                  <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+                </figure>
+              </div>
+
+              <div class="answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  optio assumenda voluptate dignissimos ab reiciendis mollitia!
+                  Eum fuga cumque, distinctio, voluptates aspernatur eligendi
+                  vel accusantium voluptatibus possimus quasi deserunt velit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                  facilis recusandae. Neque, optio nostrum ex maiores, repellat
+                  totam est corrupti, numquam voluptate vel omnis earum.
+                  Incidunt ab illo nulla quis.
+                </p>
+              </div>
             </div>
           </section>
         </section>
@@ -297,7 +347,12 @@
     <footer class="footer bg-green-100">
       <div class="container par flex">
         <div class="input-wrapper flex">
-          <div class="input__field footer-field par-fs-100">
+          <form
+            method="post"
+            action="#"
+            id="waitlist-form"
+            class="input__field footer-field par-fs-100"
+          >
             <input
               class="input footer__input"
               placeholder="Please enter your email address"
@@ -309,7 +364,8 @@
             >
               Notify Me
             </button>
-          </div>
+          </form>
+
           <p class="input-info par-fs-300 fw-main txt-white-300">
             Notify me when the app is lunched
           </p>
@@ -334,6 +390,7 @@
         </ul>
       </div>
     </footer>
+    <script src="scripts/script.js"></script>
     <script src="scripts/cta-card-hover.js"></script>
   </body>
 </html>
