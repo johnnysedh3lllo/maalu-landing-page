@@ -6,7 +6,7 @@
 
   /* NEUTRAL */
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-200: hsla(0, 0%, 11%);
+  --clr-neutral-200: hsl(0, 0%, 11%);
 
   /* FONT SIZE */
   --fs-paragraph-100: 1rem;
