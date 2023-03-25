@@ -121,40 +121,49 @@ h1.heading {
   line-height: 1.7;
 }
 
+/* OUR GOAL SECTION */
 .our-goal {
-  width: 55%;
+  width: 50%;
 }
 
 .orbit__section {
-  width: 70%;
-  height: 513.63px;
+  width: 50%;
 }
 
 .orbit {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 50%;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at center,
     transparent,
     transparent,
-    white 100%
+  hsla(0, 0%, 100%, 0.08)
+  ); */
+
+  background: radial-gradient(
+    61.74% 67.72% at 50% 50%, 
+    /* circle at center, */
+    hsla(112, 14%, 43%, 0) 57.29%,
+    hsla(0, 0%, 100%, 0.08) 81.6%
   );
 }
 
+.orbit::after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
 .first-layer {
-  width: 600px;
-  height: 600px;
+  width: 100%;
 }
 .second-layer {
-  width: 400px;
-  height: 400px;
+  width: 80%;
 }
 .third-layer {
-  width: 200px;
-  height: 200px;
+  width: 70%;
 }
 
 /* MEET OUR TEAM SECTION */
