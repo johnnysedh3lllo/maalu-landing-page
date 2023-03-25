@@ -116,7 +116,7 @@ h1.heading {
   border-radius: 40px;
   padding: 5rem 7rem;
   gap: 7rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   line-height: 1.7;
 }
@@ -125,9 +125,36 @@ h1.heading {
   width: 55%;
 }
 
-.orbit {
+.orbit__section {
   width: 70%;
   height: 513.63px;
+}
+
+.orbit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    transparent,
+    transparent,
+    white 100%
+  );
+}
+
+.first-layer {
+  width: 600px;
+  height: 600px;
+}
+.second-layer {
+  width: 400px;
+  height: 400px;
+}
+.third-layer {
+  width: 200px;
+  height: 200px;
 }
 
 /* MEET OUR TEAM SECTION */
@@ -300,7 +327,7 @@ h1.heading {
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .5s;
+  transition: max-height 0.5s;
 }
 
 .answer p {
