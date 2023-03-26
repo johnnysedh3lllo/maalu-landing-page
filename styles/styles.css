@@ -429,7 +429,7 @@ h1.heading {
 }
 
 .active .answer {
-  max-height: 9rem;
+  max-height: 25rem;
 }
 
 .active--section {
