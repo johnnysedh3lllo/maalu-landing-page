@@ -27,12 +27,19 @@
       <ul class="nav-bar__items par par-fs-300 txt-black-300 flex">
         <li><a class="nav-bar__link" href="#">Home</a></li>
         <li><a class="nav-bar__link" href="#">About</a></li>
-        <li><a class="nav-bar__link" href="#">Contact Us</a></li>
+        <li><a class="nav-bar__link" href="#contact-us">Contact Us</a></li>
       </ul>
-      <div class="nav-bar__menu">lkniuyfrty</div>
+      <div class="grid__menu">
+        <div class="grid__item box-1"></div>
+        <div class="grid__item box-2"></div>
+        <div class="grid__item box-3"></div>
+        <div class="grid__item box-4"></div>
+        <div class="grid__item box-5"></div>
+      </div>
     </nav>
+
     <!-- HEADER SECTION -->
-    <header class="header container flex">
+    <header class="header container flex" id="home">
       <!-- <div class="container"> -->
       <div class="wrapper">
         <h1 class="heading head-fs-100 head-fw-100">
@@ -42,26 +49,38 @@
           Africa’s most affordable foodstuff community
         </p>
       </div>
+
       <div class="input-wrapper flex">
         <form
-          method="post"
-          action="#"
+          method="POST"
+          action="http://localhost:5500/email/subscribe"
           id="waitlist-form"
+          name="email"
           class="header-field input__field bg-black-200 par par-fs-100"
         >
           <input
-            class="input"
+            class="input email-input"
             placeholder="Please enter your email address"
             type="email"
+            name="email"
             required
           />
           <button
             class="button header__button par-fw-300 bg-green-100 txt-white-100"
             type="submit"
           >
-            Notify Me
+            Subscribe
           </button>
         </form>
+        
+        <div class="message">
+          <p class="success-email" style="display: none; color: green">
+            Thank you for subscribing to our service
+          </p>
+          <p class="wrong-email" style="display: none; color: brown">
+            Please enter a valid email address
+          </p>
+        </div>
 
         <p class="input-info par par-fs-300 fw-main txt-black-300">
           Notify me when the app is lunched
@@ -95,7 +114,7 @@
     <!-- MAIN SECTION -->
     <main class="main">
       <div class="container flex">
-        <!--MAIN SECTION ARTICLE -->
+        <!--OUR GOALS SECTION -->
         <article class="main__article bg-green-100 flex">
           <section class="article__section our-goal">
             <h2 class="heading head-fw-100 head-fs-200 txt-white-100">
@@ -114,8 +133,59 @@
 
           <section class="orbit__section">
             <div class="orbit first-layer">
+              <img
+                src="assets/avatars/lana-steiner.png"
+                alt=""
+                class="avatar avatar-1"
+              />
+              <img
+                src="assets/avatars/katherine-moss.png"
+                alt=""
+                class="avatar avatar-2"
+              />
+              <img
+                src="assets/avatars/koray-okumus.png"
+                alt=""
+                class="avatar avatar-3"
+              />
+              <img
+                src="assets/avatars/natali-craig.png"
+                alt=""
+                class="avatar avatar-4"
+              />
               <div class="orbit second-layer">
+                <img
+                  src="assets/avatars/eve-leroy.png"
+                  alt=""
+                  class="avatar avatar-5"
+                />
+                <img
+                  src="assets/avatars/andi-lane.png"
+                  alt=""
+                  class="avatar avatar-6"
+                />
+                <img
+                  src="assets/avatars/drew-cano.png"
+                  alt=""
+                  class="avatar avatar-7"
+                />
+                <img
+                  src="assets/avatars/kate-morrison.png"
+                  alt=""
+                  class="avatar avatar-8"
+                />
                 <div class="orbit third-layer">
+                  <img
+                    src="assets/avatars/aliah-lane.png"
+                    alt=""
+                    class="avatar avatar-9"
+                  />
+                  <img
+                    src="assets/avatars/ava-wright.png"
+                    alt=""
+                    class="avatar avatar-10"
+                  />
+
                   <img src="assets/maalu-logo-white.svg" alt="" />
                 </div>
               </div>
@@ -371,7 +441,7 @@
           </p>
         </div>
 
-        <ul class="contact flex">
+        <ul class="contact flex" id="contact-us">
           <h2 class="contact-heading par-fs-200 txt-white-200 fw-main">
             Contact
           </h2>
@@ -390,7 +460,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/cta-card-hover.js"></script>
+    <script src="scripts/email-sub.js"></script>
   </body>
 </html>
