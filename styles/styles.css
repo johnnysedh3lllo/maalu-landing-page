@@ -53,10 +53,14 @@ input[type="email"]:focus {
   position: sticky;
   top: 0;
   background-color: var(--clr-neutral-100);
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
   max-width: 1700px;
   margin: 0 auto;
   z-index: 1;
+}
+
+.nav-bar__logo {
+  width: 4.5%;
 }
 
 .nav-bar__items {
@@ -67,7 +71,7 @@ input[type="email"]:focus {
   color: hsl(0, 0%, 0%);
 }
 
-.nav-bar__link:focus{
+.nav-bar__link:focus {
   color: black;
 }
 
