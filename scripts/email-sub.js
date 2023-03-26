@@ -39,16 +39,30 @@ emailSubmit.addEventListener("submit", async (e) => {
   req.onreadystatechange = () => {
     if (req.readyState === req.DONE) {
       const successEmail = document.querySelector(".success-email");
-
-      setTimeout(() => {
-        successEmail.style.display = "block";
+      const emailExist = document.querySelector(".email-exist");
+      let res = JSON.parse(req.responseText);
+      console.log("ghut", res);
+      if (res.message) {
         setTimeout(() => {
-          successEmail.style.display = "none";
-        }, 5000);
-      }, 500);
+          emailExist.style.display = "block";
+          setTimeout(() => {
+            emailExist.style.display = "none";
+          }, 5000);
+        }, 500);
+        console.log(JSON.parse(res.message));
+      }
 
-      // console log the response
-      console.log(JSON.parse(req.responseText));
+      if (res.emailUser) {
+        setTimeout(() => {
+          successEmail.style.display = "block";
+          setTimeout(() => {
+            successEmail.style.display = "none";
+          }, 5000);
+        }, 500);
+
+        // console log the response
+        console.log(JSON.parse(res.emailUser));
+      }
     }
   };
 });
