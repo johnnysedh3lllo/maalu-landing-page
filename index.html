@@ -22,19 +22,27 @@
   </head>
   <body class="bg-white-300">
     <!-- NAVIGATION -->
-    <nav class="nav-bar flex">
-      <img class="nav-bar__logo" src="assets/maalu-logo.svg" alt="" />
-      <ul class="nav-bar__items par par-fs-300 txt-black-300 flex">
-        <li><a class="nav-bar__link" href="#">Home</a></li>
-        <li><a class="nav-bar__link" href="#">About</a></li>
-        <li><a class="nav-bar__link" href="#contact-us">Contact Us</a></li>
+    <nav class="navbar flex">
+      <img class="navbar__logo" src="assets/maalu-logo-new.svg" alt="" />
+
+      <ul class="navbar__list par par-fs-300 txt-black-300">
+        <li class="navbar__item">
+          <a class="navbar__link" href="#home">Home</a>
+        </li>
+        <li class="navbar__item"><a class="navbar__link" href="#">About</a></li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="#contact-us">Contact Us</a>
+        </li>
       </ul>
-      <div class="grid__menu">
-        <div class="grid__item box-1"></div>
-        <div class="grid__item box-2"></div>
-        <div class="grid__item box-3"></div>
-        <div class="grid__item box-4"></div>
-        <div class="grid__item box-5"></div>
+
+      <div class="wrapper">
+        <div class="grid__menu">
+          <div class="grid__item box-1"></div>
+          <div class="grid__item box-2"></div>
+          <div class="grid__item box-3"></div>
+          <div class="grid__item box-4"></div>
+          <div class="grid__item box-5"></div>
+        </div>
       </div>
     </nav>
 
@@ -69,7 +77,7 @@
             class="button header__button par-fw-300 bg-green-100 txt-white-100"
             type="submit"
           >
-            Subscribe
+         Notify Me
           </button>
         </form>
 
@@ -351,12 +359,11 @@
           </h2>
 
           <section class="faq-content flex">
-            <div class="question-answer-wrapper par par-fs-100">
+            <!-- QUESTION 1 -->
+            <div class="question-wrapper par par-fs-100">
               <div class="question par-fw-300 flex">
                 <h4>What is Maalu?</h4>
-                <figure>
-                  <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
-                </figure>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
               </div>
 
               <div class="answer">
@@ -370,42 +377,133 @@
               </div>
             </div>
 
-            <div class="question-answer-wrapper par par-fs-100">
+            <!-- QUESTION 2 -->
+            <div class="question-wrapper par par-fs-100">
               <div class="question par-fw-300 flex">
-                <h4>How does it work?</h4>
-                <figure>
-                  <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
-                </figure>
+                <h4>How does Maalu work?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
               </div>
 
               <div class="answer">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum voluptate reiciendis beatae esse ratione omnis eaque
-                  dolore nobis odio reprehenderit. Provident, delectus! Ad
-                  labore, cum iusto minima sit soluta quasi!
+                  At Maalu, our customers can easily browse our selection of
+                  food items and place orders with just a click of a button. We
+                  offer the option for customers to purchase a share of a food
+                  item by joining a slot. Additionally, customers can share
+                  these slot offers with their friends and family through direct
+                  messaging or social media sharing.
                 </p>
               </div>
             </div>
 
-            <div class="question-answer-wrapper par par-fs-100">
+            <!-- QUESTION 3 -->
+            <div class="question-wrapper par par-fs-100">
               <div class="question par-fw-300 flex">
-                <h4>How much does it cost?</h4>
-                <figure>
-                  <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
-                </figure>
+                <h4>Who can use Maalu?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
               </div>
 
               <div class="answer">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  optio assumenda voluptate dignissimos ab reiciendis mollitia!
-                  Eum fuga cumque, distinctio, voluptates aspernatur eligendi
-                  vel accusantium voluptatibus possimus quasi deserunt velit.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                  facilis recusandae. Neque, optio nostrum ex maiores, repellat
-                  totam est corrupti, numquam voluptate vel omnis earum.
-                  Incidunt ab illo nulla quis.
+                  Maalu is open to anyone who is interested in collaborative
+                  food buying. Our platform is particularly useful for home
+                  cooks, meal prep enthusiasts, and small business owners who
+                  want to purchase high-quality ingredients at a lower cost.
+                </p>
+              </div>
+            </div>
+
+            <!-- QUESTION 4 -->
+            <div class="question-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>What types of foodstuff are available on Maalu?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+              </div>
+
+              <div class="answer">
+                <p>
+                  In addition to meat, Maalu also offers a diverse range of food
+                  items such as grains, flour, spices, nuts, and much more. Our
+                  selection is regularly updated based on customer demand, so
+                  make sure to check back frequently to see what's new!
+                </p>
+              </div>
+            </div>
+
+            <!-- QUESTION 5 -->
+            <div class="question-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>How is Maalu different from other food marketplaces?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+              </div>
+
+              <div class="answer">
+                <p>
+                  Maalu is unique because of our collaborative buying model,
+                  which allows customers to save money and reduce waste by
+                  purchasing in bulk. We also prioritize sustainability and
+                  transparency, working with farmers and producers who share our
+                  values and providing detailed information about the origin and
+                  quality of our ingredients.
+                </p>
+              </div>
+            </div>
+
+            <!-- QUESTION 6 -->
+            <div class="question-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>How can I get started with Maalu?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+              </div>
+
+              <div class="answer">
+                <p>
+                  Creating an account on our app is simple - just sign up and a
+                  profile will be created for you. Once you have created an
+                  account, you can start browsing our selection of food items.
+                  You can find trending slots on the featured page. If the item
+                  you require is not available, you can create a slot, and your
+                  followers will be notified. You can also share the slot link
+                  on various social media channels. Once the slot is created, it
+                  will be advertised in the marketplace.
+                </p>
+              </div>
+            </div>
+
+            <!-- QUESTION 7 -->
+            <div class="question-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>Why must i follow people?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+              </div>
+
+              <div class="answer">
+                <p>
+                  While it's not mandatory to follow other users, following
+                  other people aligns with the idea of building a community. By
+                  following other users, you will receive notifications when
+                  they create or join a group. It makes sense to follow
+                  individuals who have purchased the same item as you, as they
+                  are more likely to make a purchase again when you are ready to
+                  buy next time.
+                </p>
+              </div>
+            </div>
+
+            <!-- QUESTION 8 -->
+            <div class="question-wrapper par par-fs-100">
+              <div class="question par-fw-300 flex">
+                <h4>What if I do not want to join a slot?</h4>
+                <img class="faq__arrow" src="assets/arrow-down.svg" alt="" />
+              </div>
+
+              <div class="answer">
+                <p>
+                  Although our platform promotes collaborative buying to save
+                  money, it is also possible to make a purchase individually.
+                  Simply go to the "Create a Slot" option and click on "Solo
+                  Purchase," and the item will be sent directly to your personal
+                  cart.
                 </p>
               </div>
             </div>
