@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="styles/utility-styles.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Maalu || E-commerce</title>
+
+    <!-- JS -->
+      <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/cta-card-hover.js"></script>
   </head>
   <body class="bg-white-300">
     <!-- NAVIGATION -->
@@ -86,6 +90,8 @@
           </button>
         </form>
 
+
+
         <div class="message">
           <p class="success-email" style="display: none; color: green">
             Thank you for subscribing to our service
@@ -102,36 +108,58 @@
           Notify me when the app is lunched
         </p>
       </div>
+
       <section class="header__grid">
-        <img
-          class="header__grid__mockup one"
-          src="assets/mockups/mockup-dark-1.png"
-          alt=""
-        />
-        <img
-          class="header__grid__mockup two"
-          src="assets/mockups/mockup-dark-2.png"
-          alt=""
-        />
-        <img
-          class="header__grid__mockup three"
-          src="assets/mockups/mockup-white-1.png"
-          alt=""
-        />
-        <img
-          class="header__grid__mockup four"
-          src="assets/mockups/mockup-white-2.png"
-          alt=""
-        />
+
+        <div class="carousel">
+
+          <div class="slides">
+            <div class="slide one">
+                <img
+                  class="header__grid__mockup"
+                  src="assets/mockups/mockup-white-1.png"
+                  alt=""
+                />
+            </div>
+            <div class="slide two">
+                <img
+                  class="header__grid__mockup"
+                  src="assets/mockups/mockup-white-2.png"
+                  alt=""
+                />
+            </div>
+            <div class="slide three">
+                <img
+                  class="header__grid__mockup"
+                  src="assets/mockups/mockup-dark-1.png"
+                  alt=""
+                />
+            </div>
+            <div class="slide four">
+                <img
+                  class="header__grid__mockup"
+                  src="assets/mockups/mockup-dark-2.png"
+                  alt=""
+                />
+            </div>
+          </div>
+
+        <div class="dots-container"></div>
+        </div>
+     
+        <!-- <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button> -->
       </section>
-      <!-- </div> -->
+
+
+      </div> 
     </header>
 
     <!-- MAIN SECTION -->
     <main class="main">
       <div class="container flex">
         <!--OUR GOALS SECTION -->
-        <article class="main__article bg-green-100 flex">
+        <article class="main__article bg-green-100">
           <section class="article__section our-goal">
             <h2 class="heading head-fw-100 head-fs-200 txt-white-100">
               Our Goal
@@ -209,7 +237,7 @@
           </section>
         </article>
         <!-- MEET OUR TEAM SECTION -->
-        <section class="team flex">
+        <section class="team">
           <section class="team__context">
             <h2 class="heading head-fs-200 head-fw-100">Meat our team</h2>
             <p class="par par-fs-200">
@@ -564,7 +592,6 @@
         </ul>
       </div>
     </footer>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/cta-card-hover.js"></script>
+  
   </body>
 </html>
