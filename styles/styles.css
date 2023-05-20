@@ -542,6 +542,11 @@ h1.heading {
 }
 
 @media (max-width: 768px) {
+  .head-fs-100 {
+    --fs-heading-100: 3rem;
+  font-size: var(--fs-heading-100);
+}
+  
   .header-field {
     display: flex;
     flex-direction: column;
