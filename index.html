@@ -24,13 +24,128 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/utility-styles.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
     <title>Maalu || E-commerce</title>
 
     <!-- JS -->
       <script defer src="scripts/script.js"></script>
     <script defer src="scripts/cta-card-hover.js"></script>
   </head>
+
+
   <body class="bg-white-300">
+
+
+
+<!-- FULL SCREEN NAV MENU -->
+<nav class="nav-menu display--grid">
+      <section class="nav-menu__section section--one">
+        <div class="item-wrapper">
+          <a href="#home" class="nav-menu__item nav-menu--one">
+          </a>
+        </div>
+        
+        <a href="#cta" class="nav-menu__item nav-menu--two display--grid">
+          <p class="nav-menu__par">Become an Investor</p>
+          <div class="icon display--grid">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              alt=""
+            >
+              <path
+                d="M1.93846 18L0 16.0615L13.2923 2.76923H1.38462V0H18V16.6154H15.2308V4.70769L1.93846 18Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="text-wrapper">
+            Lorem ipsum dolor. Lorem ipsum dolor.Lorem ipsum dolor.Lorem ipsum
+            dolor.
+          </div>
+        </a>
+      </section>
+
+      <section class="nav-menu__section section--two">
+        <a href="" class="nav-menu__item nav-menu--three display--grid">
+          <div class="wrapper--2">
+            <p class="nav-menu__par">About us</p>
+            <div class="icon display--grid">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                alt=""
+              >
+                <path
+                  d="M1.93846 18L0 16.0615L13.2923 2.76923H1.38462V0H18V16.6154H15.2308V4.70769L1.93846 18Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="text-wrapper">
+              Lorem ipsum dolor. Lorem ipsum dolor.Lorem ipsum dolor.Lorem ipsum
+              dolor.
+            </div>
+          </div>
+        </a>
+        <a href="#cta" class="nav-menu__item nav-menu--four display--grid">
+          <div class="wrapper--2">
+            <p class="nav-menu__par">Join our team</p>
+            <div class="icon display--grid">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                alt=""
+              >
+                <path
+                  d="M1.93846 18L0 16.0615L13.2923 2.76923H1.38462V0H18V16.6154H15.2308V4.70769L1.93846 18Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div class="text-wrapper">
+              Lorem ipsum dolor. Lorem ipsum dolor.Lorem ipsum dolor.Lorem ipsum
+              dolor.
+            </div>
+          </div>
+        </a>
+        <a href="#contact-us" class="nav-menu__item nav-menu--five display--grid">
+          <div class="wrapper--2">
+            <p class="nav-menu__par">Contact us</p>
+            <div class="icon display--grid">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                alt=""
+              >
+                <path
+                  d="M1.93846 18L0 16.0615L13.2923 2.76923H1.38462V0H18V16.6154H15.2308V4.70769L1.93846 18Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="text-wrapper">
+              Lorem ipsum dolor. Lorem ipsum dolor.Lorem ipsum dolor.Lorem ipsum
+              dolor.
+            </div>
+          </div>
+        </a>
+      </section>
+    </nav>
+
+
     <!-- NAVIGATION -->
     <nav class="navbar flex">
       <img class="navbar__logo" src="assets/maalu-logo-new.svg" alt="" />
@@ -39,21 +154,26 @@
         <li class="navbar__item">
           <a class="navbar__link" href="#home">Home</a>
         </li>
-        <li class="navbar__item"><a class="navbar__link" href="#">About</a></li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="#">About</a></li>
         <li class="navbar__item">
           <a class="navbar__link" href="#contact-us">Contact Us</a>
         </li>
       </ul>
 
-      <div class="wrapper">
-        <div class="grid__menu">
-          <div class="grid__item box-1"></div>
+
+
+
+
+      <button class="nav-menu-button grid__menu">
+        <!-- <div class="grid__menu"> -->
+          <!-- <div class="grid__item box-1"></div>
           <div class="grid__item box-2"></div>
           <div class="grid__item box-3"></div>
           <div class="grid__item box-4"></div>
-          <div class="grid__item box-5"></div>
-        </div>
-      </div>
+          <div class="grid__item box-5"></div> -->
+        <!-- </div> -->
+      </button>
     </nav>
 
     <!-- HEADER SECTION -->
@@ -92,7 +212,7 @@
 
 
 
-        <div class="message">
+        <!-- <div class="message">
           <p class="success-email" style="display: none; color: green">
             Thank you for subscribing to our service
           </p>
@@ -102,7 +222,7 @@
           <p class="wrong-email" style="display: none; color: brown">
             Please enter a valid email address
           </p>
-        </div>
+        </div> -->
 
         <p class="input-info par par-fs-300 fw-main txt-black-300">
           Notify me when the app is lunched
@@ -111,7 +231,7 @@
 
       <section class="header__grid">
 
-        <div class="carousel">
+        <div id="carousel">
 
           <div class="slides">
             <div class="slide one">
@@ -144,8 +264,8 @@
             </div>
           </div>
 
-        <div class="dots-container"></div>
         </div>
+        <div class="dots-container"></div>
      
         <!-- <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button> -->
@@ -159,7 +279,7 @@
     <main class="main">
       <div class="container flex">
         <!--OUR GOALS SECTION -->
-        <article class="main__article bg-green-100">
+        <article class="main__article bg-green-100 observe-section">
           <section class="article__section our-goal">
             <h2 class="heading head-fw-100 head-fs-200 txt-white-100">
               Our Goal
@@ -237,7 +357,7 @@
           </section>
         </article>
         <!-- MEET OUR TEAM SECTION -->
-        <section class="team">
+        <section class="team observe-section">
           <section class="team__context">
             <h2 class="heading head-fs-200 head-fw-100">Meat our team</h2>
             <p class="par par-fs-200">
@@ -248,66 +368,95 @@
             </p>
           </section>
 
-          <section class="team__grid">
-            <section class="member-card">
-              <figure class="member-card__wraper">
-                <img
-                  class="member__img"
-                  src="assets/images/team-ceo.jpg"
-                  alt=""
-                />
-              </figure>
-              <section class="member__details">
-                <h3 class="member-name">Ugochukwu Amojoyi</h3>
-                <p class="member-position">Founder & CEO</p>
-              </section>
-            </section>
+          
+    <section class="team__grid-wrapper">
 
-            <section class="member-card">
-              <figure class="member__wraper">
-                <img
-                  class="member__img"
-                  src="assets/images/team-designer.jpg"
-                  alt=""
-                />
-              </figure>
-              <section class="member__details">
-                <h3 class="member-name">Patrick Imhakhawo</h3>
-                <p class="member-position">Product Designer</p>
-              </section>
-            </section>
+      <ul class="team__grid">
+        <li class="member-card">
+          <div class="member__wrapper">
+            <img
+              class="member__img"
+              src="assets/images/team-ceo.jpg"
+              draggable="false"
+              alt=""
+              loading="lazy"
+            />
+          </div>
 
-            <section class="member-card">
-              <figure class="member__wraper">
-                <img
-                  class="member__img"
-                  src="assets/images/team-developer.jpg"
-                  alt=""
-                />
-              </figure>
-              <section class="member__details">
-                <h3 class="member-name">John Ocheme</h3>
-                <p class="member-position">Frontend Engineer</p>
-              </section>
-            </section>
-
-            <section class="member-card">
-              <figure class="member__imgwraper">
-                <img
-                  class="member__img"
-                  src="assets/images/team-brand-account-manager.jpg"
-                  alt=""
-                />
-              </figure>
-              <section class="member__details">
-                <h3 class="member-name">Oluwakemi Adeshakin</h3>
-                <p class="member-position">Brand Account Manager</p>
-              </section>
-            </section>
+          <section class="member__details">
+            <h3 class="member-name">Ugochukwu Amojoyi</h3>
+            <p class="member-position">Founder & CEO</p>
           </section>
+        </li>
+
+        <li class="member-card">
+          <div class="member__wrapper">
+            <img
+              class="member__img"
+              src="assets/images/team-designer.jpg"
+              draggable="false"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <section class="member__details">
+            <h3 class="member-name">Patrick Imhakhawo</h3>
+            <p class="member-position">Product Designer</p>
+          </section>
+        </li>
+
+        <li class="member-card">
+          <div class="member__wrapper">
+            <img
+              class="member__img"
+              src="assets/images/team-developer.jpg"
+              draggable="false"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <section class="member__details">
+            <h3 class="member-name">John Ocheme</h3>
+            <p class="member-position">Frontend Engineer</p>
+          </section>
+        </li>
+
+        <li class="member-card">
+          <div class="member__wrapper">
+            <img
+              class="member__img"
+              src="assets/images/team-brand-account-manager.jpg"
+              draggable="false"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <section class="member__details">
+            <h3 class="member-name">Oluwakemi Adeshakin</h3>
+            <p class="member-position">Brand Account Manager</p>
+          </section>
+        </li>
+      </ul>
+
+      <div class="btn-container">
+        <div id="left" class="card-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" alt=""><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </div>
+        <div id="right" class="card-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" alt=""><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+      </div>
+    </section>
+
+
         </section>
+
+
         <!-- CTA SECTION -->
-        <section class="cta">
+        <section class="cta observe-section" id="cta">
           <!-- <div class="wrapper"> -->
           <section class="cta__card border-left">
             <div class="cta__content__wrapper cta__cw--one flex">
@@ -386,7 +535,7 @@
           <!-- </div> -->
         </section>
         <!-- FAQ SECTION -->
-        <section class="faq flex">
+        <section class="faq flex observe-section">
           <h2 class="faq-heading heading fw-main head-fs-200 txt-black-100">
             What would you like to know about Maalu?
           </h2>
