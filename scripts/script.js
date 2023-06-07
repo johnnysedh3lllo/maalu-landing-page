@@ -89,12 +89,14 @@ navMenu.addEventListener("click", function (e) {
     }, 500);
 
     setTimeout(() => {
-      overlayEl.classList.remove("z-index");
+      overlayEl.remove()
     }, 1000);
 
     document.querySelector(id).scrollIntoView({
       behavior: "smooth",
     });
+
+    
   }
 });
 
