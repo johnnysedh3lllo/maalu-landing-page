@@ -138,6 +138,10 @@ input[type="email"]:focus {
   border-radius: 0.125rem;
 }
 
+.grid__item:hover {
+  background-color: hsla(112, 31%, 40%);
+}
+
 .box-1 {
   grid-area: item-1;
 }

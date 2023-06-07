@@ -69,19 +69,20 @@ navMenu.addEventListener("click", function (e) {
   e.preventDefault();
 
   const clicked = e.target.closest(".link");
+
   if (clicked) {
     const id = clicked.getAttribute("href");
-    
+
     navItems.forEach((el, index, array) => {
       setTimeout(() => {
         el.classList.remove("visible--nav");
       }, (array.length - (index + 1)) * 50);
     });
-    
+
     setTimeout(() => {
       navMenu.classList.remove("nav-menu-display");
     }, 300);
-    
+
     const overlayEl = document.querySelector(".overlay");
     setTimeout(() => {
       overlayEl.classList.remove("visible");
