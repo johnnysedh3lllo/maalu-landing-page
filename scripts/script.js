@@ -35,26 +35,65 @@ navLinkContainer.addEventListener("click", (e) => {
 const navMenuButton = document.querySelector(".nav-menu-button");
 const navMenu = document.querySelector(".nav-menu");
 
+const navItems = document.querySelectorAll(".link");
+
 navMenuButton.addEventListener("click", function (e) {
-  const clicked = e.target;
+  const clicked = e.target.closest(".nav-menu-button");
   if (clicked.classList.contains("nav-menu-button")) {
-    navMenu.classList.add("nav-menu-display");
+    const html = `<div class="overlay z-index"></div>`;
+    document.body.insertAdjacentHTML("afterbegin", html);
+    const overlayEl = document.querySelector(".overlay");
+
+    // make visible after 100 milliseconds
+    setTimeout(() => {
+      overlayEl.classList.add("visible");
+    }, 1);
+
+    //display nav menu after 500 milliseconds
+    setTimeout(() => {
+      navMenu.classList.add("nav-menu-display");
+
+      //to make navMenu elements visible in transition
+      if (navMenu.classList.contains("nav-menu-display")) {
+        navItems.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("visible--nav");
+          }, (index + 1) * 50);
+        });
+      }
+    }, 250);
   }
 });
 
 navMenu.addEventListener("click", function (e) {
   e.preventDefault();
 
-  const clicked = e.target.closest(".nav-menu__item");
+  const clicked = e.target.closest(".link");
   if (clicked) {
     const id = clicked.getAttribute("href");
+    
+    navItems.forEach((el, index, array) => {
+      setTimeout(() => {
+        el.classList.remove("visible--nav");
+      }, (array.length - (index + 1)) * 50);
+    });
+    
+    setTimeout(() => {
+      navMenu.classList.remove("nav-menu-display");
+    }, 300);
+    
+    const overlayEl = document.querySelector(".overlay");
+    setTimeout(() => {
+      overlayEl.classList.remove("visible");
+    }, 500);
+
+    setTimeout(() => {
+      overlayEl.classList.remove("z-index");
+    }, 1000);
+
     document.querySelector(id).scrollIntoView({
       behavior: "smooth",
     });
-
-    setTimeout(() => {
-      navMenu.classList.remove("nav-menu-display");
-    }, 1000);
   }
 });
 

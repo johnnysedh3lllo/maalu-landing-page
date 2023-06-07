@@ -1,5 +1,5 @@
 /* ............................... */
-*{
+* {
   /* outline: 1px solid red; */
 }
 
@@ -108,6 +108,12 @@ input[type="email"]:focus {
   width: var(--nav-item-width);
   display: flex;
   justify-content: end;
+}
+
+.nav-menu-button-wrapper {
+  width: var(--nav-item-width);
+  display: grid;
+  justify-items: end;
 }
 
 .grid__menu {
@@ -569,9 +575,9 @@ h1.heading {
     display: none;
   }
 
-  .dots-container {
+  /* .dots-container {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 900px) {
