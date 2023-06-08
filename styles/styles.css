@@ -184,7 +184,7 @@ h1.heading {
   display: flex;
   background-color: var(--clr-primary-100);
   border-radius: 40px;
-  padding: 2rem 4rem;
+  padding: 2.5rem 4rem;
   gap: 7rem;
   align-items: center;
   line-height: 1.7;
