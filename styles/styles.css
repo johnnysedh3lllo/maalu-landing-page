@@ -51,7 +51,9 @@ input[type="email"]:focus {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: var(--clr-neutral-100);
+  background-color: hsla(0, 0%, 100%, 0.5);
+  backdrop-filter: blur(10px);
+  filter: blur(0.2);
   padding: 1rem 1rem;
   max-width: 1700px;
   margin: 0 auto;
