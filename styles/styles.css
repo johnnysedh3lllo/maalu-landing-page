@@ -52,10 +52,11 @@ input[type="email"]:focus {
   position: sticky;
   top: 0;
   background-color: var(--clr-neutral-100);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   max-width: 1700px;
   margin: 0 auto;
   z-index: 1;
+  /* border-block-end: 1px solid black; */
 }
 
 .navbar__logo {
@@ -181,19 +182,20 @@ h1.heading {
   display: flex;
   background-color: var(--clr-primary-100);
   border-radius: 40px;
-  padding: 5rem;
+  padding: 2rem 4rem;
   gap: 7rem;
   align-items: center;
   line-height: 1.7;
 }
 
 /* OUR GOAL SECTION */
-.our-goal {
-  width: 50%;
+.article__section {
+  flex: 1 1 50%;
 }
 
 .orbit__section {
-  width: 50%;
+  position: relative;
+  flex: 1 5 50%;
 }
 
 .orbit {
@@ -218,6 +220,7 @@ h1.heading {
 
 .first-layer {
   width: 100%;
+  animation: spin 11s linear 0s infinite;
 }
 
 .avatar {
@@ -240,6 +243,7 @@ h1.heading {
 
 .second-layer {
   width: 80%;
+  animation: spin-reverse 7s linear 0s infinite;
 }
 
 .avatar-5 {
@@ -261,6 +265,7 @@ h1.heading {
 
 .third-layer {
   width: 70%;
+  animation: spin 5s linear 0s infinite;
 }
 
 .avatar-9 {
@@ -271,6 +276,31 @@ h1.heading {
 .avatar-10 {
   bottom: 54px;
   right: -2px;
+}
+
+.center-piece {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 359deg;
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    rotate: 359deg;
+  }
+  to {
+    rotate: 0deg;
+  }
 }
 
 /* MEET OUR TEAM SECTION */

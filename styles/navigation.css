@@ -113,6 +113,10 @@
   border-radius: 40px;
 }
 
+.nav-menu--two > .text-wrapper {
+  font-size: 7rem;
+}
+
 .nav-menu--three {
   font-size: 2rem;
   background: hsla(0, 0%, 100%, 0.1);
@@ -147,7 +151,7 @@
 .text-wrapper {
   position: absolute;
   top: 50%;
-  font-size: 100px;
+  font-size: 6rem;
   font-weight: 400;
   white-space: nowrap;
   transition: 0.2s ease-out;

@@ -27,7 +27,7 @@
   /* TRANSITION */
   --transition-duration: 0.4s;
 
-  --nav-item-width: 12%;
+  --nav-item-width: min(12%, 7rem);
 }
 
 /* Box sizing rules */
