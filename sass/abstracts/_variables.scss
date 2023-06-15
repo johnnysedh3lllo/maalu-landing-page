@@ -1,0 +1,31 @@
+/* Variables */
+:root {
+  /* COLORS */
+  /* PRIMARY */
+  --clr-primary-100: hsl(112, 26%, 47%);
+
+  /* NEUTRAL */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 11%);
+
+  /* FONT SIZE */
+  --fs-paragraph-100: 1rem;
+  --fs-heading-100: 4rem;
+  --fs-heading-200: 3rem;
+  --fs-heading-300: 2rem;
+
+  /* FONT FAMILY */
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: "Faktum Test", sans-serif;
+
+  /* FONT WEIGHTS */
+  --fw-primary-100: 400;
+  --fw-primary-200: 500;
+  --fw-primary-300: 600;
+  --fw-secondary: 700;
+
+  /* TRANSITION */
+  --transition-duration: 0.4s;
+
+  --nav-item-width: min(12%, 7rem);
+}
