@@ -624,7 +624,7 @@ a {
   border-radius: 0.125rem;
 }
 .navigation__button-item:hover {
-  background-color: var(hsl(112, 31%, 40%));
+  background-color: hsl(112, 31%, 40%);
 }
 
 .navigation__button, .navigation__button-section {

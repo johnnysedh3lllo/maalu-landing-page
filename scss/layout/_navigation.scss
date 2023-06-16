@@ -86,7 +86,7 @@
     }
     &-item {
       &:hover {
-        @include background-color(var(hsla(112, 31%, 40%)));
+        @include background-color(hsla(112, 31%, 40%));
       }
     }
   }
