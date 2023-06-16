@@ -1,0 +1,19 @@
+@mixin display($display) {
+  display: $display;
+}
+@mixin justify($x) {
+  justify-content: $x;
+}
+@mixin align($y) {
+  align-items: $y;
+}
+@mixin gap($gap) {
+  gap: $gap;
+}
+@mixin background-color($clr) {
+  background-color: $clr;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}

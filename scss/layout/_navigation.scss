@@ -1,0 +1,269 @@
+/* NAVIGATION */
+.navigation {
+  @include display(flex);
+  @include justify(space-between);
+  @include align(center);
+  @include gap(1rem);
+
+  position: sticky;
+  top: 0;
+  @include background-color(hsla(0, 0%, 100%, 0.5));
+  backdrop-filter: blur(10px);
+  filter: blur(0.2);
+  padding: 1rem 1rem;
+  max-width: 1700px;
+  margin: 0 auto;
+  z-index: 1;
+  /* border-block-end: 1px solid black; */
+  &__logo {
+    width: var(--nav-item-width);
+  }
+
+  &__list {
+    @include display(flex);
+    @include align(center);
+    @include gap(3rem);
+  }
+  &__link {
+    position: relative;
+    padding: 7px 0;
+  }
+  &__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.4s ease-out;
+    border-radius: 100px;
+  }
+
+  &__link:hover::after,
+  &__link:focus::after {
+    left: 12.5%;
+    right: 12.5%;
+    width: 75%;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    transition: 0.3s ease-out;
+  }
+
+  &__wrapper {
+    width: var(--nav-item-width);
+    @include display(grid);
+    @include justify(end);
+  }
+
+  &__button {
+    width: 2.375rem;
+    height: 2.375rem;
+    @extend %button-gap;
+
+    //TODO Transitions
+    transition: all 0.15s;
+
+    &-section {
+      @extend %button-gap;
+      &--one {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &--two {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+    &-item {
+      @include background-color(var(--clr-neutral-200));
+      border-radius: 0.125rem;
+    }
+    &-item {
+      &:hover {
+        @include background-color(hsla(112, 31%, 40%));
+      }
+    }
+  }
+}
+
+%button-gap {
+  @include display(grid);
+  @include gap(0.125rem);
+}
+
+/* NAVIGATION MENU*/
+.display--grid {
+  display: grid;
+}
+
+.link {
+  opacity: 0;
+  translate: 0 100px;
+}
+
+.navigation-menu {
+  @include display(grid);
+
+  @include background-color(hsl(0, 0%, 0%));
+
+  @include gap(1rem);
+  grid-template-rows: 1fr minmax(150px, 36%);
+  inline-size: 100%;
+  position: fixed;
+  min-block-size: 100vh;
+  padding: 2.2rem;
+  z-index: -1000;
+  opacity: 0;
+
+  &__section {
+    display: grid;
+    gap: 1rem;
+    &--one {
+      grid-template-columns: 1fr minmax(150px, 36%);
+    }
+
+    &--two {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 1.5rem;
+    align-items: end;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    &:active {
+      scale: 0.95;
+      cursor: pointer;
+    }
+    &:hover .text-wrapper {
+      opacity: 1;
+    }
+
+    &--wrapper {
+      background: hsla(0, 0%, 98%, 1);
+      border-radius: 40px;
+      overflow: hidden;
+      transition: all 0.3s ease-out;
+      @include display(grid);
+      &:active {
+        scale: 0.95;
+        cursor: pointer;
+      }
+    }
+
+    &--wrapper--2 {
+      @include display(grid);
+      @include justify(space-between);
+      @include align(center);
+      grid-auto-flow: column;
+    }
+
+    &__par {
+      transition: all 0.15s;
+    }
+    &__icon {
+      border: 2px solid white;
+      inline-size: 100%;
+      block-size: auto;
+      padding: 1.5rem;
+      place-items: center;
+      border-radius: 20px;
+      transition: all 0.15s;
+      @include display(grid);
+
+      &--huge {
+        @include justify(end);
+        inline-size: 120px;
+        block-size: auto;
+        padding: 2.5rem;
+        border-radius: 40px;
+      }
+      &--border-dark {
+        border: 1px solid rgb(0, 0, 0);
+      }
+    }
+
+    &--one {
+      background: url(../assets/mockups/landing-page.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      scale: 1;
+    }
+    &--two {
+      @include display(grid);
+      @include background-color(hsla(112, 26%, 47%, 1));
+      @include align(space-between);
+    }
+
+    &--three {
+      @include display(grid);
+      @include background-color(hsla(0, 0%, 100%, 0.1));
+    }
+    &--four {
+      @include display(grid);
+      @include background-color(hsla(0, 0%, 98%, 1));
+    }
+    &--five {
+      @include display(grid);
+      @include background-color(hsla(0, 0%, 100%, 0.4));
+    }
+  }
+}
+
+.navigation-menu__item:hover p,
+.navigation-menu__item:hover .navigation-menu__item__icon {
+  opacity: 0;
+}
+
+.navigation-menu__item-wrapper:hover .navigation-menu__item--one {
+  scale: 1.05;
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
+  transition: 0.2s ease-out;
+  translate: 0 -50%;
+  animation: moving-text 15s linear infinite;
+  opacity: 0;
+}
+
+/* TO BE ADDED BY JS */
+.overlay {
+  @include background-color(hsl(0, 0%, 0%));
+  min-block-size: 100vh;
+  inline-size: 100%;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navigation-menu--display {
+  z-index: 1000;
+  opacity: 1;
+}
+
+.visible {
+  opacity: 1;
+}
+.z-index {
+  z-index: 500;
+}
+
+.visible--nav {
+  opacity: 1;
+}
+
+.visible--nav {
+  translate: 0 0;
+}

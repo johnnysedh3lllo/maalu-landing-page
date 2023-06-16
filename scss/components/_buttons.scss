@@ -1,0 +1,13 @@
+.button {
+  border: 0;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+}
+
+.header__button:hover {
+  background-color: hsla(112, 31%, 40%);
+}
+
+.footer__button:hover {
+  filter: brightness(0.9);
+}

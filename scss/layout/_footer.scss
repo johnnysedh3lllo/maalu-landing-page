@@ -1,0 +1,49 @@
+
+/* FOOTER SECTION */
+.footer .container {
+  padding: 3.75rem 0;
+  justify-content: space-between;
+}
+
+.footer-field {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.footer-field ::placeholder {
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+.footer__input {
+  color: var(--clr-neutral-100);
+}
+
+.contact {
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact-heading {
+  padding-bottom: 1rem;
+}
+
+.contact-item {
+  color: var(--clr-neutral-100);
+}
+
+.footer__nav-bar {
+  gap: 0.75rem;
+  flex-direction: column;
+  line-height: 28px;
+}
+
+.footer__link:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-item > a {
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-item > a:hover {
+  color: hsla(0, 0%, 100%, 0.7);
+}

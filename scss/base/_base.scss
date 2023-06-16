@@ -1,5 +1,25 @@
-* {
-  /* outline: 1px solid red; */
+ul {
+  list-style: none;
+}
+
+span {
+  color: var(--clr-primary-100);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 ul {

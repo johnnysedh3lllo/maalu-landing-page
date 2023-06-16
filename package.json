@@ -1,0 +1,11 @@
+{
+  "name": "maalu-landing-page",
+  "version": "1.0.0",
+  "description": "landing page for daniel",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass scss/main.scss styles/styles.css -w"
+  },
+  "author": "Johnny",
+  "license": "ISC"
+}
