@@ -4,7 +4,7 @@
   "description": "landing page for daniel",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss styles/styles.css -w"
+    "compile:sass": "sass scss/main.scss styles/styles.css -w"
   },
   "author": "Johnny",
   "license": "ISC"
