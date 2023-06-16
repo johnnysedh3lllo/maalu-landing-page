@@ -7,7 +7,7 @@
 
   position: sticky;
   top: 0;
-  background-color: hsla(0, 0%, 100%, 0.5);
+  @include background-color(hsla(0, 0%, 100%, 0.5));
   backdrop-filter: blur(10px);
   filter: blur(0.2);
   padding: 1rem 1rem;
@@ -20,19 +20,9 @@
   }
 
   &__list {
-    //TODO layout
-
     @include display(flex);
     @include align(center);
     @include gap(3rem);
-
-    //TODO typography
-    font-family: var(--ff-primary);
-    font-size: var(--fs-paragraph-100);
-
-    //TODO color
-    --clr-neutral-200: hsla(0, 0%, 0%, 0.4);
-    color: var(--clr-neutral-200);
   }
   &__link {
     position: relative;
@@ -61,13 +51,10 @@
   &__link:hover,
   &__link:focus {
     transition: 0.3s ease-out;
-    color: black;
   }
 
   &__wrapper {
     width: var(--nav-item-width);
-
-    //TODO layout
     @include display(grid);
     @include justify(end);
   }
@@ -75,8 +62,6 @@
   &__button {
     width: 2.375rem;
     height: 2.375rem;
-
-    //TODO layout
     @extend %button-gap;
 
     //TODO Transitions
@@ -96,12 +81,12 @@
       cursor: pointer;
     }
     &-item {
-      background-color: var(--clr-neutral-200);
+      @include background-color(var(--clr-neutral-200));
       border-radius: 0.125rem;
     }
     &-item {
       &:hover {
-        background-color: hsla(112, 31%, 40%);
+        @include background-color(var(hsla(112, 31%, 40%)));
       }
     }
   }
@@ -125,13 +110,7 @@
 .navigation-menu {
   @include display(grid);
 
-  //color
-  background-color: black;
-
-  //typography
-  font-family: "Faktum Test", sans-serif;
-  font-weight: 400;
-  color: white;
+  @include background-color(hsl(0, 0%, 0%));
 
   @include gap(1rem);
   grid-template-rows: 1fr minmax(150px, 36%);
@@ -174,12 +153,20 @@
       border-radius: 40px;
       overflow: hidden;
       transition: all 0.3s ease-out;
-      @extend %display;
+      @include display(grid);
       &:active {
         scale: 0.95;
         cursor: pointer;
       }
     }
+
+    &--wrapper--2 {
+      @include display(grid);
+      @include justify(space-between);
+      @include align(center);
+      grid-auto-flow: column;
+    }
+
     &__par {
       transition: all 0.15s;
     }
@@ -191,7 +178,7 @@
       place-items: center;
       border-radius: 20px;
       transition: all 0.15s;
-      @extend %display;
+      @include display(grid);
 
       &--huge {
         @include justify(end);
@@ -212,38 +199,22 @@
       scale: 1;
     }
     &--two {
-      font-size: 4rem;
-      @extend %display;
+      @include display(grid);
       @include background-color(hsla(112, 26%, 47%, 1));
       @include align(space-between);
-      & > .text-wrapper {
-        font-size: 7rem;
-      }
     }
 
     &--three {
-      @extend %display;
-      @extend %font-size-200;
+      @include display(grid);
       @include background-color(hsla(0, 0%, 100%, 0.1));
     }
     &--four {
-      @extend %display;
-      @extend %font-size-200;
+      @include display(grid);
       @include background-color(hsla(0, 0%, 98%, 1));
-      color: black;
     }
     &--five {
-      @extend %display;
-      @extend %font-size-200;
-      @include background-color(hsla(0, 0%, 100%, 0.4));
-    }
-
-    %font-size-200 {
-      font-size: var(--fs-heading-200);
-    }
-
-    %display {
       @include display(grid);
+      @include background-color(hsla(0, 0%, 100%, 0.4));
     }
   }
 }
@@ -257,18 +228,9 @@
   scale: 1.05;
 }
 
-.wrapper--2 {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .text-wrapper {
   position: absolute;
   top: 50%;
-  font-size: 6rem;
-  font-weight: 400;
   white-space: nowrap;
   transition: 0.2s ease-out;
   translate: 0 -50%;
@@ -276,19 +238,9 @@
   opacity: 0;
 }
 
-@media (max-width: 900px) {
-  .section--one,
-  .section--two {
-    grid-template-columns: 1fr;
-  }
-  .icon {
-    display: none;
-  }
-}
-
 /* TO BE ADDED BY JS */
 .overlay {
-  background-color: black;
+  @include background-color(hsl(0, 0%, 0%));
   min-block-size: 100vh;
   inline-size: 100%;
   position: fixed;

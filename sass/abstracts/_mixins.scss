@@ -13,3 +13,7 @@
 @mixin background-color($clr) {
   background-color: $clr;
 }
+
+@mixin font-size($size) {
+  font-size: $size;
+}

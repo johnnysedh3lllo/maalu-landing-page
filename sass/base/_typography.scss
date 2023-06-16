@@ -1,0 +1,46 @@
+.navigation {
+  &__list {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-paragraph-100);
+  }
+
+  &__list {
+    --clr-neutral-200: hsla(0, 0%, 0%, 0.4);
+    color: var(--clr-neutral-200);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: black;
+  }
+}
+
+.navigation-menu {
+  font-family: "Faktum Test", sans-serif;
+  font-weight: 400;
+  color: white;
+
+  &__item {
+    &--two {
+      font-size: 4rem;
+
+      & > .text-wrapper {
+        font-size: 7rem;
+      }
+    }
+    &--three {
+      @include font-size(2rem);
+    }
+    &--four {
+      @include font-size(2rem);
+      color: black;
+    }
+    &--five {
+      @include font-size(2rem);
+    }
+  }
+}
+
+.text-wrapper {
+  font-size: 6rem;
+  font-weight: 400;
+}
