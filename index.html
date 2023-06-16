@@ -35,17 +35,19 @@
 
 
   <body class="bg-white-300">
+
+
 <!-- FULL SCREEN NAV MENU -->
-    <nav class="nav-menu display--grid">
-      <section class="nav-menu__section section--one">
-        <a href="#home" class="item-wrapper display--grid link">
-          <div  class="nav-menu__item nav-menu--one">
+    <nav class="navigation-menu display--grid">
+      <section class="navigation-menu__section navigation-menu__section--one">
+        <a href="#home" class="navigation-menu__item--wrapper link">
+          <div  class="navigation-menu__item navigation-menu__item--one">
           </div>
         </a>
 
-        <a href="#cta" class="nav-menu__item nav-menu--two display--grid link">
-          <p class="nav-menu__par">Become an Investor</p>
-          <div class="icon display--grid">
+        <a href="#cta" class="navigation-menu__item navigation-menu__item--two link">
+          <p class="navigation-menu__item__par">Become an Investor</p>
+          <div class="navigation-menu__item__icon navigation-menu__item__icon--huge">
             <svg
               width="36"
               height="36"
@@ -66,11 +68,11 @@
         </a>
       </section>
 
-      <section class="nav-menu__section section--two">
-        <a href="#our-goal" class="nav-menu__item nav-menu--three display--grid link">
+      <section class="navigation-menu__section navigation-menu__section--two">
+        <a href="#our-goal" class="navigation-menu__item navigation-menu__item--three link">
           <div class="wrapper--2">
-            <p class="nav-menu__par">Our goal</p>
-            <div class="icon display--grid">
+            <p class="navigation-menu__item__par">Our goal</p>
+            <div class="navigation-menu__item__icon">
               <svg
                 width="18"
                 height="18"
@@ -93,10 +95,10 @@
             </div>
           </div>
         </a>
-        <a href="#cta" class="nav-menu__item nav-menu--four display--grid link">
+        <a href="#cta" class="navigation-menu__item navigation-menu__item--four link">
           <div class="wrapper--2">
-            <p class="nav-menu__par">Join our team</p>
-            <div class="icon display--grid">
+            <p class="navigation-menu__item__par">Join our team</p>
+            <div class="navigation-menu__item__icon navigation-menu__item__icon--border-dark">
               <svg
                 width="18"
                 height="18"
@@ -116,10 +118,10 @@
             </div>
           </div>
         </a>
-        <a href="#contact-us" class="nav-menu__item nav-menu--five display--grid link">
+        <a href="#contact-us" class="navigation-menu__item navigation-menu__item--five link">
           <div class="wrapper--2">
-            <p class="nav-menu__par">Contact us</p>
-            <div class="icon display--grid">
+            <p class="navigation-menu__item__par">Contact us</p>
+            <div class="navigation-menu__item__icon">
               <svg
                 width="18"
                 height="18"
@@ -142,31 +144,57 @@
       </section>
     </nav>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar flex">
-      <a href="#" class="navbar__logo" ><img src="assets/maalu-logo-new.svg" alt="" /></a>
 
-      <ul class="navbar__list par par-fs-300 txt-black-300">
-        <li class="navbar__item">
-          <a class="navbar__link" href="#home">Home</a>
+
+
+
+
+
+
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+      <a href="#" class="navigation__logo" ><img src="assets/maalu-logo-new.svg" alt="" /></a>
+
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#home">Home</a>
         </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#">About</a></li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#contact-us">Contact Us</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">About</a></li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#contact-us">Contact Us</a>
         </li>
       </ul>
 
-        <div class="nav-menu-button-wrapper">
-          <div class="nav-menu-button grid__menu">
-            <div class="grid__item box-1"></div>
-            <div class="grid__item box-2"></div>
-            <div class="grid__item box-3"></div>
-            <div class="grid__item box-4"></div>
-            <div class="grid__item box-5"></div>
+        <div class="navigation__wrapper">
+          <div role="button" class="navigation__button">
+
+
+            <div class="navigation__button-section navigation__button-section--one">
+              <div class="navigation__button-item"></div>
+              <div class="navigation__button-item"></div>
+            </div>
+
+            <div class="navigation__button-section navigation__button-section--two">
+             <div class="navigation__button-item"></div>
+             <div class="navigation__button-item"></div>
+             <div class="navigation__button-item"></div>
+            </div>
+
           </div>
         </div>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- HEADER SECTION -->
     <header class="header container flex" id="home">

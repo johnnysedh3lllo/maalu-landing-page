@@ -2,7 +2,7 @@
 
 //GENERAL SELECTIONS
 const sections = document.querySelectorAll(".observe-section");
-const navLinkContainer = document.querySelector(".navbar__list");
+const navLinkContainer = document.querySelector(".navigation__list");
 
 //TEAM CAROUSEL
 const wrapper = document.querySelector(".team__grid-wrapper");
@@ -32,14 +32,14 @@ navLinkContainer.addEventListener("click", (e) => {
 
 ///////////////////
 //*NAV MENU DISPLAY
-const navMenuButton = document.querySelector(".nav-menu-button");
-const navMenu = document.querySelector(".nav-menu");
+const navMenuButton = document.querySelector(".navigation__button");
+const navMenu = document.querySelector(".navigation-menu");
 
 const navItems = document.querySelectorAll(".link");
 
 navMenuButton.addEventListener("click", function (e) {
-  const clicked = e.target.closest(".nav-menu-button");
-  if (clicked.classList.contains("nav-menu-button")) {
+  const clicked = e.target.closest(".navigation__button");
+  if (clicked.classList.contains("navigation__button")) {
     const html = `<div class="overlay z-index"></div>`;
     document.body.insertAdjacentHTML("afterbegin", html);
     const overlayEl = document.querySelector(".overlay");
@@ -51,10 +51,10 @@ navMenuButton.addEventListener("click", function (e) {
 
     //display nav menu after 500 milliseconds
     setTimeout(() => {
-      navMenu.classList.add("nav-menu-display");
+      navMenu.classList.add("navigation-menu--display");
 
       //to make navMenu elements visible in transition
-      if (navMenu.classList.contains("nav-menu-display")) {
+      if (navMenu.classList.contains("navigation-menu--display")) {
         navItems.forEach((el, index) => {
           setTimeout(() => {
             el.classList.add("visible--nav");
@@ -80,7 +80,7 @@ navMenu.addEventListener("click", function (e) {
     });
 
     setTimeout(() => {
-      navMenu.classList.remove("nav-menu-display");
+      navMenu.classList.remove("navigation-menu--display");
     }, 300);
 
     const overlayEl = document.querySelector(".overlay");
