@@ -1068,18 +1068,6 @@ input[type=email]:focus {
     display: none;
   } */
 }
-@media (max-width: 600px) {
-  .team__grid {
-    grid-auto-columns: 100%;
-  }
-  .member-card {
-    scroll-snap-align: center;
-    cursor: pointer;
-  }
-  .navigation__list {
-    display: none;
-  }
-}
 @media (max-width: 900px) {
   .navigation-menu__section--one,
   .navigation-menu__section--two {
@@ -1239,6 +1227,20 @@ input[type=email]:focus {
     font-weight: 600;
   }
   .footer__nav-bar {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .team__grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+  }
+  .member-card {
+    scroll-snap-align: center;
+    cursor: pointer;
+  }
+  .navigation__list {
     display: none;
   }
 }
