@@ -6,6 +6,7 @@ const navLinkContainer = document.querySelector(".navigation__list");
 
 //TEAM CAROUSEL
 const wrapper = document.querySelector(".team__grid-wrapper");
+const btnContainer = document.querySelector(".btn-container");
 const teamGrid = document.querySelector(".team__grid");
 const oneCardWidth = document.querySelector(".member-card").offsetWidth;
 const cards = [...document.querySelectorAll(".member-card")];
@@ -21,7 +22,7 @@ const faqSection = document.querySelector(".faq-content");
 navLinkContainer.addEventListener("click", (e) => {
   e.preventDefault();
   const clicked = e.target;
-  if (clicked.classList.contains("navbar__link")) {
+  if (clicked.classList.contains("navigation__link")) {
     const id = clicked.getAttribute("href");
 
     document.querySelector(id).scrollIntoView({
@@ -102,13 +103,13 @@ navMenu.addEventListener("click", function (e) {
 
 /////////////////
 //*TEAM CAROUSEL
-wrapper.addEventListener("click", (e) => {
-  const clicked = e.target;
-  if (clicked.classList.contains("btn-container")) return;
+btnContainer.addEventListener("click", (e) => {
+  const clicked = e.target.closest(".card-btn");
+
   if (clicked.id === "right") {
     teamGrid.scrollLeft += oneCardWidth;
   } else {
-    teamGrid.scrollLeft += -oneCardWidth;
+    teamGrid.scrollLeft -= oneCardWidth;
   }
 });
 

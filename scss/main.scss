@@ -1,5 +1,4 @@
 @import "abstracts/variables";
-@import "abstracts/breakpoints";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
@@ -19,3 +18,5 @@
 @import "components/cards";
 
 @import "pages/home";
+
+@import "abstracts/breakpoints";

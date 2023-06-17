@@ -50,6 +50,10 @@
     scroll-snap-align: center;
     cursor: pointer;
   }
+
+  .navigation__list{
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -156,7 +160,8 @@
   }
 
   .orbit__section {
-    width: 100%;
+    // width: 100%;
+    display: none;
   }
 
   .team {
