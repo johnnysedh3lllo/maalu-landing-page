@@ -9,7 +9,9 @@
   .slides {
     display: grid;
     grid-template-rows: 105px auto 105px;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 3.125rem;
+    // block-size: 100vh;
   }
 
   .one {
@@ -74,7 +76,7 @@
 
   #carousel {
     display: flex;
-    width: 400px;
+    // width: 400px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -85,14 +87,23 @@
   }
 
   .slides {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // width: min(100%, 1100px);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     padding: 2rem 0;
   }
 
   .slide {
-    width: 400px;
+    // width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
