@@ -116,18 +116,23 @@
 .team {
   display: flex;
   justify-content: space-between;
-  gap: 6.25rem;
+  // gap: 6.25rem;
+  gap: 2rem;
 }
 
 .team__grid {
   padding: 1rem 2.5rem;
 }
 
+.team__grid-wrapper {
+  flex: 2 1 50%;
+}
+
 .team__context {
+  flex: 1 2 50%;
   align-self: flex-start;
   line-height: 1.7;
   position: sticky;
-  top: 79px;
 }
 
 .member-card {
@@ -137,6 +142,7 @@
   border-radius: 20px;
   text-align: center;
   overflow: hidden;
+  max-inline-size: 275px;
 }
 
 .member__details {
