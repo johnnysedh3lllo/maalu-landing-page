@@ -819,7 +819,7 @@ input[type=email]:focus {
 }
 
 .team__grid {
-  padding: 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 .team__context {
@@ -1234,7 +1234,7 @@ input[type=email]:focus {
   .team__grid {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 100%;
+    grid-auto-columns: 90%;
   }
   .member-card {
     scroll-snap-align: center;

@@ -105,7 +105,6 @@ navMenu.addEventListener("click", function (e) {
 //*TEAM CAROUSEL
 btnContainer.addEventListener("click", (e) => {
   const clicked = e.target.closest(".card-btn");
-
   if (clicked.id === "right") {
     teamGrid.scrollLeft += oneCardWidth;
   } else {
