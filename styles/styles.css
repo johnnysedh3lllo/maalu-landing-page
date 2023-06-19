@@ -1,3 +1,17 @@
+@font-face {
+  font-family: faktum test;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Faktum Test"), url("https://fonts.cdnfonts.com/s/19541/Rene Bieder - Faktum Test Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: faktum test;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Faktum Test"), url("https://fonts.cdnfonts.com/s/19541/Rene Bieder - Faktum Test Bold.woff") format("woff");
+  font-display: swap;
+}
 /* Variables */
 :root {
   /* COLORS */
@@ -500,7 +514,7 @@ a {
   border: 1px solid rgb(0, 0, 0);
 }
 .navigation-menu__item--one {
-  background: url(../assets/mockups/landing-page.jpg);
+  background: url(../assets/mockups/landing-page.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   scale: 1;

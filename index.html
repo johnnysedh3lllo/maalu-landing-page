@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Maalu is an online foodstuff marketplace that allows customers to collaborate and share the cost of buying in bulk. By pooling together their resources, Maalu customers can purchase high-quality ingredients at a lower cost than buying them individually."
+    />
     <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
@@ -32,7 +35,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.cdnfonts.com/css/faktum-test" rel="stylesheet" />
+    <!-- <link
+      rel="preload"
+      as="font"
+      type="font/woff"
+      href="https://fonts.cdnfonts.com/css/faktum-test"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    /> -->
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="styles/styles.css" />
@@ -167,7 +177,7 @@
     <!-- NAVIGATION -->
     <nav class="navigation">
       <a href="#" class="navigation__logo"
-        ><img src="assets/maalu-logo-new.svg" alt="" width="112" height="40"
+        ><img src="assets/maalu-logo-new.png" alt="" width="112" height="40"
       /></a>
 
       <ul class="navigation__list">
@@ -183,7 +193,11 @@
       </ul>
 
       <div class="navigation__wrapper">
-        <div role="button" class="navigation__button">
+        <div
+          role="button"
+          aria-labelledby="labeldiv"
+          class="navigation__button"
+        >
           <div
             class="navigation__button-section navigation__button-section--one"
           >
@@ -247,11 +261,12 @@
             <div class="slide one">
               <img
                 class="header__grid__mockup"
-                sizes="(max-width: 500px) 200px, 300px"
+                sizes="(max-width: 500px) 150px, 300px"
                 srcset="
                   assets/mockups/mobile/mockup-white-1-mobile.png   150w,
                   assets/mockups/desktop/mockup-white-1-desktop.png 300w
                 "
+                src="assets/mockups/desktop/mockup-white-1-desktop.png"
                 alt=""
                 width="300"
                 height="650"
@@ -260,24 +275,27 @@
             <div class="slide two">
               <img
                 class="header__grid__mockup"
-                sizes="(max-width: 500px) 200px, 300px"
+                sizes="(max-width: 500px) 150px, 300px"
                 srcset="
                   assets/mockups/mobile/mockup-white-2-mobile.png   150w,
                   assets/mockups/desktop/mockup-white-2-desktop.png 300w
                 "
+                src="assets/mockups/desktop/mockup-white-2-desktop.png"
                 alt=""
                 width="300"
                 height="650"
+                
               />
             </div>
             <div class="slide three">
               <img
                 class="header__grid__mockup"
-                sizes="(max-width: 500px) 200px, 300px"
+                sizes="(max-width: 500px) 150px, 300px"
                 srcset="
                   assets/mockups/mobile/mockup-dark-1-mobile.png   150w,
                   assets/mockups/desktop/mockup-dark-1-desktop.png 300w
                 "
+                src="assets/mockups/desktop/mockup-dark-1-desktop.png"
                 alt=""
                 width="300"
                 height="650"
@@ -291,6 +309,7 @@
                   assets/mockups/mobile/mockup-dark-2-mobile.png   150w,
                   assets/mockups/desktop/mockup-dark-2-desktop.png 300w
                 "
+                src="assets/mockups/desktop/mockup-dark-2-desktop.png"
                 alt=""
                 width="300"
                 height="650"
@@ -332,85 +351,175 @@
           <section class="orbit__section">
             <img
               class="center-piece"
-              src="assets/maalu-logo-white.svg"
+              src="assets/maalu-logo-white.png"
               alt=""
               width="95"
               height="92"
             />
 
             <div class="orbit first-layer">
-              <img
-                src="assets/avatars/lana-steiner.png"
-                alt=""
-                class="avatar avatar-1"
-                width="32"
-                height="32"
-              />
-              <img
-                src="assets/avatars/katherine-moss.png"
-                alt=""
-                class="avatar avatar-2"
-                width="32"
-                height="32"
-              />
-              <img
-                src="assets/avatars/koray-okumus.png"
-                alt=""
-                class="avatar avatar-3"
-                width="32"
-                height="32"
-              />
-              <img
-                src="assets/avatars/natali-craig.png"
-                alt=""
-                class="avatar avatar-4"
-                width="32"
-                height="32"
-              />
+              <picture class="avatar avatar-1">
+                <source
+                  srcset="assets/avatars/webp/lana-steiner.webp"
+                  type="image/webp"
+                  width="32"
+                  height="32"
+                />
+                <img
+                  src="assets/avatars/webp/lana-steiner.png"
+                  alt=""
+                  class="avatar avatar-1"
+                  width="32"
+                  height="32"
+                />
+              </picture>
+
+              <picture class="avatar avatar-2">
+                <source
+                  srcset="assets/avatars/webp/katherine-moss.webp"
+                  type="image/webp"
+                  width="32"
+                  height="32"
+                />
+                <img
+                  src="assets/avatars/katherine-moss.png"
+                  alt=""
+                  class="avatar avatar-2"
+                  width="32"
+                  height="32"
+                />
+              </picture>
+
+              <picture class="avatar avatar-3">
+                <source
+                  srcset="assets/avatars/webp/koray-okumus.webp"
+                  type="image/webp"
+                  width="32"
+                  height="32"
+                />
+                <img
+                  src="assets/avatars/koray-okumus.png"
+                  alt=""
+                  class="avatar avatar-3"
+                  width="32"
+                  height="32"
+                />
+              </picture>
+
+              <picture class="avatar avatar-4">
+                <source
+                  srcset="assets/avatars/webp/natali-craig.webp"
+                  type="image/webp"
+                  width="32"
+                  height="32"
+                />
+                <img
+                  src="assets/avatars/natali-craig.png"
+                  alt=""
+                  class="avatar avatar-4"
+                  width="32"
+                  height="32"
+                />
+              </picture>
+
               <div class="orbit second-layer">
-                <img
-                  src="assets/avatars/eve-leroy.png"
-                  alt=""
-                  class="avatar avatar-5"
-                  width="32"
-                  height="32"
-                />
-                <img
-                  src="assets/avatars/andi-lane.png"
-                  alt=""
-                  class="avatar avatar-6"
-                  width="32"
-                  height="32"
-                />
-                <img
-                  src="assets/avatars/drew-cano.png"
-                  alt=""
-                  class="avatar avatar-7"
-                  width="32"
-                  height="32"
-                />
-                <img
-                  src="assets/avatars/kate-morrison.png"
-                  alt=""
-                  class="avatar avatar-8"
-                  width="32"
-                  height="32"
-                />
+                <picture class="avatar avatar-5">
+                  <source
+                    srcset="assets/avatars/webp/eve-leroy.webp"
+                    type="image/webp"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="assets/avatars/eve-leroy.png"
+                    alt=""
+                    class="avatar avatar-5"
+                    width="32"
+                    height="32"
+                  />
+                </picture>
+
+                <picture class="avatar avatar-6">
+                  <source
+                    srcset="assets/avatars/webp/andi-lane.webp"
+                    type="image/webp"
+                    width="32"
+                    height="32"
+                  />
+
+                  <img
+                    src="assets/avatars/andi-lane.png"
+                    alt=""
+                    class="avatar avatar-6"
+                    width="32"
+                    height="32"
+                  />
+                </picture>
+
+                <picture class="avatar avatar-7">
+                  <source
+                    srcset="assets/avatars/webp/drew-cano.webp"
+                    type="image/webp"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="assets/avatars/drew-cano.png"
+                    alt=""
+                    class="avatar avatar-7"
+                    width="32"
+                    height="32"
+                  />
+                </picture>
+
+                <picture class="avatar avatar-8">
+                  <source
+                    srcset="assets/avatars/webp/kate-morrison.webp"
+                    type="image/webp"
+                    width="32"
+                    height="32"
+                  />
+                  <img
+                    src="assets/avatars/kate-morrison.png"
+                    alt=""
+                    class="avatar avatar-8"
+                    width="32"
+                    height="32"
+                  />
+                </picture>
+
                 <div class="orbit third-layer">
-                  <img
-                    src="assets/avatars/aliah-lane.png"
-                    alt=""
-                    class="avatar avatar-9"
-                    width="32"
-                    height="32"
-                  />
-                  <img
-                    src="assets/avatars/ava-wright.png"
-                    alt=""
-                    class="avatar avatar-10"
-                    width="32"
-                    height="32"
-                  />
+                  <picture class="avatar avatar-9">
+                    <source
+                      srcset="assets/avatars/webp/aliah-lane.webp"
+                      type="image/webp"
+                      width="32"
+                      height="32"
+                    />
+                    <img
+                      src="assets/avatars/aliah-lane.png"
+                      alt=""
+                      class="avatar avatar-9"
+                      width="32"
+                      height="32"
+                    />
+                  </picture>
+
+                  <picture class="avatar avatar-10">
+                    <source
+                      srcset="assets/avatars/webp/ava-wright.webp"
+                      type="image/webp"
+                      width="32"
+                      height="32"
+                    />
+                    <img
+                      src="assets/avatars/ava-wright.png"
+                      alt=""
+                      class="avatar avatar-10"
+                      width="32"
+                      height="32"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -432,7 +541,13 @@
           <section class="team__grid-wrapper">
             <ul class="team__grid">
               <li class="member-card">
-                <div class="member__wrapper">
+                <picture class="member__wrapper">
+                  <source
+                    srcset="assets/images/webp/team-ceo.webp"
+                    width="275"
+                    height="275"
+                    type="image/webp"
+                  />
                   <img
                     class="member__img"
                     src="assets/images/team-ceo.jpg"
@@ -442,7 +557,7 @@
                     width="275"
                     height="275"
                   />
-                </div>
+                </picture>
 
                 <section class="member__details">
                   <h3 class="member-name">Ugochukwu Amojoyi</h3>
@@ -451,7 +566,13 @@
               </li>
 
               <li class="member-card">
-                <div class="member__wrapper">
+                <picture class="member__wrapper">
+                  <source
+                    srcset="assets/images/webp/team-designer.webp"
+                    width="275"
+                    height="275"
+                    type="image/webp"
+                  />
                   <img
                     class="member__img"
                     src="assets/images/team-designer.jpg"
@@ -461,7 +582,7 @@
                     width="275"
                     height="275"
                   />
-                </div>
+                </picture>
 
                 <section class="member__details">
                   <h3 class="member-name">Patrick Imhakhawo</h3>
@@ -470,7 +591,13 @@
               </li>
 
               <li class="member-card">
-                <div class="member__wrapper">
+                <picture class="member__wrapper">
+                  <source
+                    srcset="assets/images/webp/team-developer.webp"
+                    width="275"
+                    height="275"
+                    type="image/webp"
+                  />
                   <img
                     class="member__img"
                     src="assets/images/team-developer.jpg"
@@ -480,7 +607,7 @@
                     width="275"
                     height="275"
                   />
-                </div>
+                </picture>
 
                 <section class="member__details">
                   <h3 class="member-name">John Ocheme</h3>
@@ -489,7 +616,13 @@
               </li>
 
               <li class="member-card">
-                <div class="member__wrapper">
+                <picture class="member__wrapper">
+                  <source
+                    srcset="assets/images/webp/team-brand-account-manager.webp"
+                    width="275"
+                    height="275"
+                    type="image/webp"
+                  />
                   <img
                     class="member__img"
                     src="assets/images/team-brand-account-manager.jpg"
@@ -499,7 +632,7 @@
                     width="275"
                     height="275"
                   />
-                </div>
+                </picture>
 
                 <section class="member__details">
                   <h3 class="member-name">Oluwakemi Adeshakin</h3>
