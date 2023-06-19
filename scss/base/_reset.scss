@@ -1,24 +1,10 @@
-/* Box sizing rules */
+/* Box sizing, margin and padding rules*/
 *,
 *::before,
 *::after {
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
   outline-color: transparent;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd,
-ul {
   margin: 0;
   padding: 0;
 }
@@ -30,7 +16,7 @@ ol[role="list"] {
 }
 
 html {
-  scroll-padding-top: 5rem;
+  scroll-padding-block-start: 5rem;
 }
 
 /* Set core root defaults */
@@ -41,8 +27,8 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  width: 100%;
+  min-block-size: 100vh;
+  inline-size: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -62,7 +48,8 @@ a:active {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
   display: block;
 }
 
