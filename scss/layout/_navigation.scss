@@ -201,7 +201,7 @@
     &--two {
       @include display(grid);
       @include background-color(hsla(112, 26%, 47%, 1));
-      @include align(space-between);
+      @include justify(space-between);
     }
 
     &--three {

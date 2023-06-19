@@ -521,7 +521,7 @@ a {
 .navigation-menu__item--two {
   display: grid;
   background-color: hsl(112, 26%, 47%);
-  align-items: space-between;
+  justify-content: space-between;
 }
 .navigation-menu__item--three {
   display: grid;
@@ -1070,9 +1070,12 @@ input[type=email]:focus {
   } */
 }
 @media (max-width: 900px) {
-  .navigation-menu__section--one,
-  .navigation-menu__section--two {
+  .navigation-menu {
+    grid-template-rows: 1fr;
+  }
+  .navigation-menu__section--one, .navigation-menu__section--two {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
   .navigation-menu__item__icon {
     display: none;
@@ -1119,7 +1122,6 @@ input[type=email]:focus {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    height: 650px;
   }
   .dots {
     border: none;
@@ -1240,9 +1242,15 @@ input[type=email]:focus {
     grid-auto-flow: column;
     grid-auto-columns: 90%;
   }
-  .member-card {
+  .team__grid .member-card {
     scroll-snap-align: center;
     cursor: pointer;
+  }
+  .navigation-menu__item--two {
+    font-size: 2rem;
+  }
+  .navigation-menu__item--two > .text-wrapper {
+    font-size: 6rem;
   }
   .navigation__list {
     display: none;
