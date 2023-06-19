@@ -21,7 +21,7 @@
   --fw-secondary: 700;
   /* TRANSITION */
   --transition-duration: 0.4s;
-  --nav-item-width: min(12%, 7rem);
+  --nav-item-width: min(30%, 7rem);
 }
 
 ul {
@@ -1080,6 +1080,9 @@ input[type=email]:focus {
   .navigation-menu__item__icon {
     display: none;
   }
+  .navigation__list {
+    display: none;
+  }
   .head-fs-100 {
     --fs-heading-100: 3rem;
     font-size: var(--fs-heading-100);
@@ -1251,9 +1254,6 @@ input[type=email]:focus {
   }
   .navigation-menu__item--two > .text-wrapper {
     font-size: 6rem;
-  }
-  .navigation__list {
-    display: none;
   }
 }
 
