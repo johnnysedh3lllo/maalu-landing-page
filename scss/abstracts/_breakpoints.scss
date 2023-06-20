@@ -108,6 +108,12 @@
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0;
+
+    background: url(../assets/elipse.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
     // display: flex;
     // justify-content: center;
     // align-items: center;
