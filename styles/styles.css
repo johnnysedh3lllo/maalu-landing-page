@@ -750,19 +750,19 @@ input[type=email]:focus {
 }
 
 .avatar-1 {
-  top: -23px;
+  top: -10px;
 }
 
 .avatar-2 {
-  left: -24px;
+  left: -10px;
 }
 
 .avatar-3 {
-  right: -24px;
+  right: -10px;
 }
 
 .avatar-4 {
-  bottom: -24px;
+  bottom: -10px;
 }
 
 .second-layer {
@@ -771,23 +771,23 @@ input[type=email]:focus {
 }
 
 .avatar-5 {
-  top: 40px;
-  left: 35px;
+  top: 30px;
+  left: 13px;
 }
 
 .avatar-6 {
-  top: 40px;
-  right: 35px;
+  top: 30px;
+  right: 13px;
 }
 
 .avatar-7 {
-  bottom: 40px;
-  left: 35px;
+  bottom: 30px;
+  left: 13px;
 }
 
 .avatar-8 {
-  bottom: 40px;
-  right: 35px;
+  bottom: 30px;
+  right: 13px;
 }
 
 .third-layer {
@@ -797,12 +797,12 @@ input[type=email]:focus {
 
 .avatar-9 {
   top: 54px;
-  left: -2px;
+  left: -6px;
 }
 
 .avatar-10 {
   bottom: 54px;
-  right: -2px;
+  right: -6px;
 }
 
 .center-piece {
